@@ -1,0 +1,44 @@
+Task - 01 
+
+    (These both method implement on App Component)
+Observable : 
+    
+    This is belong to RxJS and it used for the asynchronous programming. The observable is middleware of request and resonse.
+
+    It will return a chunk of response and not wait for the all data and then return. but it will return instance how many data have a available to return.
+
+    It will never wait for 100% get data and then return ...
+
+    We have to need to async pipe or subscribe() method for the observable. so we can get data and manipulate that data.
+
+    It need to import HttpClient in the service consturctor. and import this service in the consturctor where we used this service.
+
+    and also register in app-module.ts file and import HttpClient class and httpmodule register into imports[] array.
+
+    it will provide data when we used observable otherwise not provide it.
+
+    it will work with async and sync data.
+
+Promises : 
+
+    This is also belong to javascript. It is also used for the asynchronous programming. we can understand it like a middleware of request and response.
+
+    This is used when 100% data get then it will return then data. so it will wait for the all data geting from the server(api).
+
+    The promise will return also error object like network issue. and also return data.
+
+    it will work with only async data.it will return one value.
+        - resolve (data successfully get)
+        - reject (data not get or some error )
+    
+    if we get successfully data then we will do something with promise object.
+    eg : 
+        let promiseObject = new promise((resolve,reject)=>{
+            resolve(); or reject();
+        });
+
+        promiseObject.then(res=>{
+            logic to manage data...
+        });
+
+    View Console for the Promise Data..
